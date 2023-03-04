@@ -15,7 +15,7 @@ Zentria analyses Heart Rate Variability (HRV) data to help users manage anxiety 
 
 # Stress Detection in text with NLP
 - Dataset: Stress Analysis in Social Media - A Reddit Dataset: https://www.kaggle.com/datasets/ruchi798/stress-analysis-in-social-media
-- Word Cloud data visualization: used for representing text data in which the size of each word indicates its frequency or importance)
+- Word Cloud data visualization: used for representing text data in which the size of each word indicates its frequency or importance
 <img width="773" alt="image" src="https://user-images.githubusercontent.com/90888090/222922460-52ebf8e2-7131-4482-a293-1c0c88227f6b.png">
 
 - Testing user input:
