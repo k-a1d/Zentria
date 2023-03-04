@@ -1,0 +1,55 @@
+#home-page {
+    background-color: #5261F8;
+    color: #F6F7FB;
+    padding: 16px;
+    text-align: left;
+}
+
+#recent-activities {
+    color: #292A46;
+}
+
+#recent-activities > div {
+    color: #F6F7FB;
+}
+
+.activity-preview {
+    padding: 12px;
+    background-color: #8E9BFB;
+    border-radius: 12px;
+    margin: 8px 0;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tiles-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+#tiles-container > div {
+    border-radius: 12px;
+    height: 128px;
+    vertical-align: bottom;
+    padding: 8px;
+}
+
+#tile-header, #recent-activities{
+    color: #292A46;
+    font-weight: bold;
+    font-size: larger;
+    margin: 4px 0;
+}
+
+.tile {
+    position: relative;
+}
+
+.tile-content {
+    position: absolute;
+    bottom: 16px;
+}
