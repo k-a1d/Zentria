@@ -3,6 +3,7 @@
     color: #F6F7FB;
     padding: 16px;
     text-align: left;
+    height: 100%;
 }
 
 #recent-activities {
@@ -33,7 +34,7 @@
 
 #tiles-container > div {
     border-radius: 12px;
-    height: 128px;
+    height: 144px;
     vertical-align: bottom;
     padding: 8px;
 }
@@ -53,3 +54,20 @@
     position: absolute;
     bottom: 16px;
 }
+
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 0;
+    overflow: hidden;
+    /* border-radius: 10%; */
+    background-color:#292A46; 
+    color: #FFF;
+    transition: all 1s;
+  }
+  
+  .slider.close {
+    top: 90%;
+    height: 0;
+  }
