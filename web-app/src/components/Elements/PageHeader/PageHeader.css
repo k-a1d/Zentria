@@ -1,0 +1,13 @@
+.page-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-start: 3;
+}
+
+.page-header > div {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0 16px;
+    font-size: larger;
+}
