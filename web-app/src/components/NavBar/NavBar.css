@@ -1,4 +1,9 @@
-#Navbar {
+#NavBar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 16px;
+}
+
+#NavBar > svg {
+    transform: scale(2);
 }

@@ -1,15 +1,14 @@
 import React from "react";
 import './Meditation.css'
 import SampleTimer from "../../images/SampleTimer.png";
-import PageHeader from "../Elements/PageHeader/PageHeader";
 
 const Meditation = () => {
     return (
         <div>
-            <div id='gratitude'>
-                <div>Gratitude</div>
-                <img src={SampleTimer} />
-                <div>Playlist</div>
+            <div id='gratitude' >
+                <div className="large-header">Gratitude</div>
+                <img src={SampleTimer} alt='Sample Timer'/>
+                <div className="large-header"> Playlist</div>
             </div>
         </div>
     );

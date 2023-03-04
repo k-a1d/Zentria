@@ -1,4 +1,5 @@
 .page-header {
+    margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-start: 3;
@@ -10,4 +11,12 @@
     align-items: center;
     padding: 0 16px;
     font-size: larger;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block
 }

@@ -1,22 +1,18 @@
 import React from "react";
 import ProfilePic from "../ProfilePic/ProfilePic";
-import { IonBackButton, IonButtons, IonHeader, IonContent, IonToolbar, IonTitle } from '@ionic/react';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { slideAnimation } from "../../Home/Home";
 import './PageHeader.css'
 
 const PageHeader = ({ title }) => {
     return (
         <div className="page-header">
-            <div>
-            <IonHeader>
-                <IonToolbar>
-                <IonButtons slot="start">
-                    <IonBackButton></IonBackButton>
-                </IonButtons>
-                <IonTitle>Back Button</IonTitle>
-                </IonToolbar>
-            </IonHeader>
+            <div style={{justifyContent: "left"}}>
+                <div id='back-btn' className="hide">
+                    <ArrowBackIcon  onClick={() => slideAnimation("#5261F8", "Activity")}/>
+                </div>
             </div>
-            <div style={{justifyContent: "center"}}>{title}</div>
+            <div id='page-title' style={{justifyContent: "center"}}>{title}</div>
             <div><ProfilePic /></div>
         </div>
     )
