@@ -26,5 +26,31 @@
     padding: 24px 12px;
 }
 
+#statistics-container{
+    display: flex;
+    justify-content: center;
+}
 
+#previous-sleep-data {
+    display: inline-flex;
+    width: 90%;
+    max-width: 450px;
+}
+
+#previous-sleep-data > div {
+    flex: 1;
+    max-width: 200px;
+    margin: 8px;
+    height: 100px;
+}
+
+#previous-sleep-data-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.preview-image > img {
+    width: 100%;
+}
 

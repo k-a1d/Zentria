@@ -1,0 +1,9 @@
+#heart-rate {
+    text-align: left;
+    padding: 24px 12px;
+    background-color: #F7F6FB;
+}
+
+.stats > svg {
+    width: 300px
+}

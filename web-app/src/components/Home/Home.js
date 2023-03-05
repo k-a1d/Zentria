@@ -5,7 +5,6 @@ import PageHeader from '../Elements/PageHeader/PageHeader';
 import './Home.css'
 
 const Home = ({ sliderContent,  slideAnimation}) => {
-
     const ActivityPreview = ({ title, desc, time }) => {
         return (
             <div className='activity-preview'>
@@ -52,7 +51,7 @@ const Home = ({ sliderContent,  slideAnimation}) => {
             
             <div id='tiles-container'>
                 <Tile tileColour={'#FF7990'} title={'Exercises'} desc={'Pick an activity'} textColor={'#292A46'} />
-                <Tile tileColour={'#75DEF1'} title={'Statistics'} desc={'Look at your stats'} textColor={'#292A46'} onClickFunc={() => slideAnimation('#5261F8', 'Statistics', <Statistics />)}/>
+                <Tile tileColour={'#75DEF1'} title={'Statistics'} desc={'Look at your stats'} textColor={'#292A46'} onClickFunc={() => slideAnimation('#5261F8', 'Sleep', <Statistics />)}/>
                 <Tile tileColour={'#F9D479'} title={'Journal'} desc={'Write how you feel'} textColor={'#292A46'} onClickFunc={() => slideAnimation('#5261F8', 'Checkin', <Journal />)} />
                 <Tile id='Meditation' tileColour={'#292A46'} title={'Meditation'} desc={'Choose your track'} textColor={'#F6F7FB'} onClickFunc={() => slideAnimation('#292A46' , 'Meditation', <Meditation />)}/>
             </div>
