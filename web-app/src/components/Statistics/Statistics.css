@@ -1,18 +1,24 @@
-#sleep-pattern {
+.stats {
     display: flex;
     margin: 12px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     width: 80%;
-    max-width: 300px;
+    max-width: 400px;
 }
 
-#sleep-pattern > img {
+.stats > img {
     width: 80%;
-    max-width: 300px;
+    max-width: 400px;
+    margin:auto;
 }
 
-#sleep-pattern-container {
+.stats-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #statistics {

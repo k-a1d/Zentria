@@ -13,7 +13,7 @@
     justify-content: center;
 }
 
-#calendar-vector {
+.images {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -22,7 +22,7 @@
     margin: auto
 }
 
-#calendar-vector > img{
+.images > img{
     max-width: 300px;
     width: 80%;
 }
