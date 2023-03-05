@@ -4,6 +4,8 @@
     color: #292A46;
     background: #F6F7FB;
     border-radius: 10%;
+    max-width: 156px;
+    overflow: hidden;
 }
 
 .playlist-thumnail > img {
@@ -13,4 +15,10 @@
     margin-top: 8px;
     object-fit: cover;
     object-position: top;
+}
+
+.playlist-thumnail > div {
+    text-align: left;
+    padding-left: 12px;
+    font-size: 14px;
 }

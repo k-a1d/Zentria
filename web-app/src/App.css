@@ -3,6 +3,10 @@
 .App {
   text-align: center;
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* position: absolute; */
+  overflow: hidden;
 }
 
 .App-logo {

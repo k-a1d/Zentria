@@ -12,7 +12,7 @@ import './NavBar.css'
 const NavBar = ({ slideAnimation }) => {
     return ( 
         <div id="NavBar">
-            <CalendarMonthIcon onClick={() => slideAnimation('#F6F7FB', 'Calendar', <Calendar />)}/>
+            <CalendarMonthIcon onClick={() => slideAnimation('#5261F8', 'Journal', <Calendar />)}/>
             <SettingsIcon onClick={() => console.log('hey')}/>
             <ShowChartIcon onClick={() => slideAnimation('#5261F8', 'Statistics', <Statistics />)}/>
             <NotificationsIcon onClick={() => console.log('hey')}/>

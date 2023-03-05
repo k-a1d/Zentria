@@ -1,0 +1,23 @@
+#calendar {
+    background-color: white;
+    padding: 16px;
+    color: black;
+}
+
+#calendar > div{
+    margin-top: 12px
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+#calendar-vector{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin: auto
+}

@@ -28,8 +28,6 @@ function App() {
       document.querySelector('.slider').classList.toggle('close');
       setIsSliderOpen(true)
     }
-
-   
 }
 
   return (

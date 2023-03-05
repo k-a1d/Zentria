@@ -1,4 +1,5 @@
 import Meditation from '../Meditation/Meditation';
+import Statistics from '../Statistics/Statistics'
 import PageHeader from '../Elements/PageHeader/PageHeader';
 import './Home.css'
 
@@ -36,14 +37,12 @@ const Home = ({ sliderContent,  slideAnimation}) => {
         <>
         <div id="home-page">
             <PageHeader title='Activity' slideAnimation={slideAnimation} />
-            <div>
-                <div className='large-header' id='recent-activities'>Recent Activities</div>
-                <div className='larger-header'>Your Activities</div>
-                <div id='recent-activities-container'>
-                    <ActivityPreview title={"Journal Entry"} desc={"Recent Activities"} time={"Today"}/>
-                    <ActivityPreview title={"Journal Entry"} desc={"Recent Activities"} time={"Today"}/>
-                    <ActivityPreview title={"Meditation"} desc={"Recent Activities"} time={"3 days ago"}/>
-                </div>
+            <div className='large-header' id='recent-activities'>Recent Activities</div>
+            <div className='larger-header'>Your Activities</div>
+            <div id='recent-activities-container'>
+                <ActivityPreview title={"Journal Entry"} desc={"Recent Activities"} time={"Today"}/>
+                <ActivityPreview title={"Journal Entry"} desc={"Recent Activities"} time={"Today"}/>
+                <ActivityPreview title={"Meditation"} desc={"Recent Activities"} time={"3 days ago"}/>
             </div>
             <div id='shortcuts'>
                 <div id='tile-header' className='large-header'>Shortcuts</div>
@@ -52,7 +51,7 @@ const Home = ({ sliderContent,  slideAnimation}) => {
             
             <div id='tiles-container'>
                 <Tile tileColour={'#FF7990'} title={'Exercises'} desc={'Pick an activity'} textColor={'#292A46'} />
-                <Tile tileColour={'#75DEF1'} title={'Statistics'} desc={'Look at your stats'} textColor={'#292A46'} />
+                <Tile tileColour={'#75DEF1'} title={'Statistics'} desc={'Look at your stats'} textColor={'#292A46'} onClickFunc={() => slideAnimation('#5261F8', 'Statistics', <Statistics />)}/>
                 <Tile tileColour={'#F9D479'} title={'Journal'} desc={'Write how you feel'} textColor={'#292A46'} />
                 <Tile id='Meditation' tileColour={'#292A46'} title={'Meditation'} desc={'Choose your track'} textColor={'#F6F7FB'} onClickFunc={() => slideAnimation('#292A46' , 'Meditation', <Meditation />)}/>
             </div>
