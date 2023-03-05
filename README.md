@@ -2,7 +2,6 @@
 
 Zentria analyses Heart Rate Variability (HRV) data to help users manage anxiety "before" key events in their lives.
 
-# Zentria Application
 <img width="530" alt="image" src="https://user-images.githubusercontent.com/90888090/222943905-5f307023-f1e8-4649-a41f-c2aa36b285b5.png">
 
 # Mobile Application
