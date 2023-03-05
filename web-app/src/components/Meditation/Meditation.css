@@ -2,8 +2,7 @@
     background-color: #5261F8;
     height: 100%;
     text-align: center;
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
+
 }
 
 #gratitude > img{
@@ -13,3 +12,17 @@
 #meditation-header {
     margin: 16px;
 }
+
+#playlist {
+    display: flex;
+    width: 120%;
+    overflow: hidden;
+    gap: 12px;
+    padding: 16px;
+}
+
+#gratitude > .larger-header {
+    text-align: left;
+    padding-left: 16px;
+}
+

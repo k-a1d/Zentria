@@ -1,0 +1,31 @@
+#journal {
+    padding: 12px;
+    background-color: #f6f7fb;
+}
+
+#check-in-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px
+}
+
+#check-in-options > button {
+    border: none;
+    border-radius: 8px;
+    height: 48px;
+    width: 160px;
+}
+
+#journal > div {
+    color: black;
+    margin: 12px;
+}
+
+#add-entry-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    height: 48px;
+    width: 160px;
+}

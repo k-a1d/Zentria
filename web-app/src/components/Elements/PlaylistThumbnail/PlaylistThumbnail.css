@@ -1,0 +1,16 @@
+.playlist-thumnail{
+    width: 40%;
+    height: 168px;
+    color: #292A46;
+    background: #F6F7FB;
+    border-radius: 10%;
+}
+
+.playlist-thumnail > img {
+    border-radius: 10%;
+    width: 92%;
+    height: 88px;
+    margin-top: 8px;
+    object-fit: cover;
+    object-position: top;
+}

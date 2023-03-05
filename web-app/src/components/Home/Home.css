@@ -14,9 +14,13 @@
     color: #F6F7FB;
 }
 
-#Meditation-Div > div{
+#Slider-Div {
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+#Slider-Div > div{
     height: 100%;
-    border-radius: 10%;
 }
 
 .activity-preview {
@@ -62,7 +66,8 @@
 .slider {
     position: absolute;
     width: 100%;
-    height: 77%;
+    height: 78%;
+    /* height: 100%;  */
     top: 0;
     overflow: hidden;
     background-color:#292A46; 
@@ -71,13 +76,13 @@
   }
   
   .slider.close {
-    top: 77%;
+    /* top: 77%; */
+    top: 100%;
     height: 0;
   }
 
-#Statistics-Div,
-#Meditation-Div {
-    margin-top: 110px;
+#Slider-Div {
+    margin-top: 98px;
 }
 
 .large-header {
@@ -87,6 +92,7 @@
 .larger-header {
     font-size: 30px;
 }
+
 
 #shortcuts {
     display: flex;

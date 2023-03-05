@@ -1,0 +1,13 @@
+#sleep-pattern-container {
+    display: flex;
+    justify-content: center;
+    margin: 12px;
+}
+
+#statistics {
+    text-align: left;
+    padding: 24px 12px;
+}
+
+
+

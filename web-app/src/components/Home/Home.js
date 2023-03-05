@@ -1,10 +1,9 @@
-import React from 'react';
 import Meditation from '../Meditation/Meditation';
-import Statistics from '../Statistics/Statistics';
 import PageHeader from '../Elements/PageHeader/PageHeader';
 import './Home.css'
 
-const Home = () => {
+const Home = ({ sliderContent,  slideAnimation}) => {
+
     const ActivityPreview = ({ title, desc, time }) => {
         return (
             <div className='activity-preview'>
@@ -36,7 +35,7 @@ const Home = () => {
     return (
         <>
         <div id="home-page">
-            <PageHeader title='Activity' />
+            <PageHeader title='Activity' slideAnimation={slideAnimation} />
             <div>
                 <div className='large-header' id='recent-activities'>Recent Activities</div>
                 <div className='larger-header'>Your Activities</div>
@@ -55,26 +54,14 @@ const Home = () => {
                 <Tile tileColour={'#FF7990'} title={'Exercises'} desc={'Pick an activity'} textColor={'#292A46'} />
                 <Tile tileColour={'#75DEF1'} title={'Statistics'} desc={'Look at your stats'} textColor={'#292A46'} />
                 <Tile tileColour={'#F9D479'} title={'Journal'} desc={'Write how you feel'} textColor={'#292A46'} />
-                <Tile id='Meditation' tileColour={'#292A46'} title={'Meditation'} desc={'Choose your track'} textColor={'#F6F7FB'} onClickFunc={() => slideAnimation('#292A46' , 'Meditation')}/>
+                <Tile id='Meditation' tileColour={'#292A46'} title={'Meditation'} desc={'Choose your track'} textColor={'#F6F7FB'} onClickFunc={() => slideAnimation('#292A46' , 'Meditation', <Meditation />)}/>
             </div>
         </div>
-        {/* <div id='Meditation-Div' className="slider close" >
-            <Meditation />
-        </div> */}
-        <div id='Statistics-Div' className="slider close" >
-            <Statistics />
+        <div id='Slider-Div' className="slider close" >
+            {sliderContent}
         </div>
         </>
     );
 };
-
-export const slideAnimation = (color, title) => {
-    document.getElementById('home-page').style.backgroundColor = color;
-    document.getElementById('page-title').textContent = title;
-    document.getElementById('back-btn').classList.toggle('hide');
-    // if (title === 'Activity') return
-    document.querySelector('.slider').classList.toggle('close');
-   
-}
 
 export default Home;

@@ -4,17 +4,19 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import ShowChartIcon from '@mui/icons-material/ShowChart';
 import NoteIcon from '@mui/icons-material/Note';
-import { slideAnimation } from "../Home/Home";
+import Statistics from "../Statistics/Statistics";
+import Calendar from "../Calendar/Calendar";
+import Journal from "../Journal/Journal";
 import './NavBar.css'
 
-const NavBar = () => {
-    return (
+const NavBar = ({ slideAnimation }) => {
+    return ( 
         <div id="NavBar">
-            <CalendarMonthIcon onClick={() => console.log('hey')}/>
+            <CalendarMonthIcon onClick={() => slideAnimation('#F6F7FB', 'Calendar', <Calendar />)}/>
             <SettingsIcon onClick={() => console.log('hey')}/>
-            <ShowChartIcon onClick={() => slideAnimation('#5261F8', 'Statistics')}/>
+            <ShowChartIcon onClick={() => slideAnimation('#5261F8', 'Statistics', <Statistics />)}/>
             <NotificationsIcon onClick={() => console.log('hey')}/>
-            <NoteIcon onClick={() => console.log('hey')}/>
+            <NoteIcon onClick={() => slideAnimation('#5261F8', 'Checkin', <Journal />)}/>
         </div>
     )
 }
