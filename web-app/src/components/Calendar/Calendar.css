@@ -13,11 +13,16 @@
     justify-content: center;
 }
 
-#calendar-vector{
+#calendar-vector {
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
     max-width: 300px;
     margin: auto
+}
+
+#calendar-vector > img{
+    max-width: 300px;
+    width: 80%;
 }

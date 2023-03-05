@@ -1,5 +1,6 @@
 import React from "react";
-import { ReactComponent as SleepPattern } from "../../images/Sleep-pattern.svg";
+// import { ReactComponent as SleepPattern } from "../../images/Sleep-pattern.svg";
+import SleepPattern from "../../images/Sleep-Pattern.png";
 import './Statistics.css'
 
 const Statistics = () => {
@@ -9,7 +10,7 @@ const Statistics = () => {
             <div className="larger-header">Sleep Activity</div>
             <div id='sleep-pattern-container'>
                 <div id='sleep-pattern'>
-                    <SleepPattern />
+                    <img src={SleepPattern} alt='Sleep Pattern Graph'/>
                 </div>
             </div>
         </div>

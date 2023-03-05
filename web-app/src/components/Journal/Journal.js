@@ -16,7 +16,7 @@ const Journal = () => {
             <div id='add-journal'>
                 <div className='large-header'>Journal</div>
                 <p><strong>Tell Zentria how you're feeling today</strong></p>
-                <textarea rows="10" cols="40">Write about your current situation</textarea>
+                <textarea rows="10" cols="40" placeholder="Write about your current situation"></textarea>
                 <button id='add-entry-btn'>Add Entry</button>
             </div>
         </div>

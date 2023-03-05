@@ -5,6 +5,11 @@
     max-width: 300px;
 }
 
+#sleep-pattern > img {
+    width: 80%;
+    max-width: 300px;
+}
+
 #sleep-pattern-container {
     display: flex;
     justify-content: center;

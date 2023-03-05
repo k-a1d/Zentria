@@ -22,7 +22,7 @@
 }
 
 .activity-preview {
-    padding: 12px;
+    padding: 10px;
     background-color: #8E9BFB;
     border-radius: 12px;
     margin: 8px 0;
@@ -65,7 +65,7 @@
     position: absolute;
     width: 100%;
     /* height: 78%; */
-    height: 110%; 
+    height: 102%; 
     top: 0;
     overflow: hidden;
     background-color:#292A46; 
@@ -90,11 +90,11 @@
 
 
 .large-header {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .larger-header {
-    font-size: 30px;
+    font-size: 26px;
 }
 
 #shortcuts {

@@ -1,14 +1,13 @@
-import { ReactComponent as CalendarSvg } from "../../images/Calendar.svg";
-import './Calendar.css'
+import CalendarImg from "../../images/Calendar.png";
+import './Calendar.css';
 
 const Calendar = () => {
     return (
         <div id='calendar'>
             <div className="large-header">March</div>
             <div id='calendar-vector'>
-                <CalendarSvg />
+                <img src={CalendarImg} alt='Sample Calendar' />
             </div>
-            
         </div>
     )
 }
